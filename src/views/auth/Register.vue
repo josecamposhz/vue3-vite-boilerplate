@@ -17,7 +17,7 @@
               />
 
               <b-input
-                name="lasttName"
+                name="lastName"
                 placeholder="Apellido"
                 rules="required|min:2"
               />
