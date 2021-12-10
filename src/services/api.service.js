@@ -4,7 +4,7 @@ import { request, errorResponse } from "./api.interceptor";
 class ApiService {
   constructor(route) {
     this.resource = axios.create({
-      baseURL: "http://localhost:4000/api",
+      baseURL: "express-mongo-boilerplate.vercel.app/api",
     });
     this.resource.interceptors.request.use(request);
     this.resource.interceptors.response.use((res) => res, errorResponse);
